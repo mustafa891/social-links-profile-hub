@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* vars */
+
+:root {
+
+    --Green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-Grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+}
+
+
+
+body {
+    background: var(--off-black);
+    font-family: "Inter", sans-serif;   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style The Card */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    background: var(--dark-Grey);
+}
+
+
+.card .card-header {
+    text-align: center;
+}
+
+.card .card-header .profile {
+    width: 80px;
+    margin: auto;
+}
+
+.card .card-header .profile img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card .card-header h2 {
+    font-weight: 500;
+    color: var(--white);
+}
+
+.card .card-header span {
+    display: block;
+    color: var(--Green);
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card .card-header p {
+    display: block;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card .card-header .details {
+    margin: 25px 0;
+}
+
+
+.card .card-body {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card .card-body .links {
+    list-style: none;
+
+}
+
+
+.card .card-body .links .link {
+    width: 100%;
+    margin-top:15px ;
+    text-align: center;
+}
+
+.card .card-body .links .link a{
+    display: block;
+    color: var(--white);
+    background: var(--grey);
+    width: 100%;
+    font-weight: 500;
+    padding: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: color 0.4s ease-in-out, 
+    background 0.4s ease-in-out;
+}
+
+
+
+.card .card-body .links .link a:hover {
+
+    background: var(--Green);
+    color: var(--dark-Grey);
+
+}
